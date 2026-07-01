@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Edit Student</title>
+</head>
+<body>
+<h1>Edit Student</h1>
+<form action="/update/{{ student[0] }}" method="POST">
+<p><label>Name:</label><br><input type="text" name="name" value="{{ student[1] }}" required></p>
+<p><label>Email:</label><br><input type="email" name="email" value="{{ student[2] }}" required></p>
+<p><label>Course:</label><br><input type="text" name="course" value="{{ student[3] }}" required></p>
+<p><input type="submit" value="Update Student"> <a href="/">Cancel</a></p>
+</form>
+</body>
+</html>
